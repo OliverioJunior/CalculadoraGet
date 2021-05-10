@@ -1,0 +1,47 @@
+body{
+    margin: auto;
+    max-width:700px;
+    max-height:800px;
+    background-color: Black;
+}
+#conteiner{
+    margin: 20px auto;
+    padding: 20px ;
+    max-width: 500px;
+    height: 700px;
+    background-color: blue;
+    border-radius: 5px;
+    background-image: linear-gradient(rgb(136, 142, 224),rgb(102, 173, 255));
+    
+}
+.organizar{
+    display:grid;
+    grid-template-columns: repeat( 4 , 100px);
+    grid-template-rows: 2;
+}
+input{
+    margin:10px;
+    display:grid;
+    border-radius: 2px;
+    border:none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+label{
+    display:block;
+}
+.IMC{
+    max-width: 150px;
+    height: 17px;
+    background-color:white;
+}
+.textarea{
+    width: 400px;
+    height: 300px;
+    resize: none;
+    margin: auto;
+    background-color:white;
+}
