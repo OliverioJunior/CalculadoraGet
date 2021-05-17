@@ -1,46 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Nutrição</title>
     <link rel="stylesheet" href="calculadora.css">
+    <a class="hidden" href="https://icons8.com/icon/1RN7fS3rEqUZ/energia-calórica">Energia calórica icon by Icons8</a>
 </head>
-<body>
-    <div id = "conteiner"> 
-        
-            <h1>Calculadora Nutrição</h1>
-            <div class = 'organizar'>
-            <!--<label for = 'nome'>Digite o nome:</label>
-               <input name = 'nome' type = 'text' id ='name' value =''>
-            -->
-            <label for ='idade'> Digite a idade:</label>
-                <input name ='idade' type = 'number' class = 'idade' min ='1' max ='90' value =''>
-            
-            <label for = 'peso'>Peso:</label>
-               <input name = 'peso' type="number" class = 'peso' min = '1' step = '1' value =''>
-            
-            <label for = 'altura'>Altura:</label>
-                <input type="number" class = 'altura' min = '1' step = '0.1' value =''>
-            
-            <label for = 'fator atividade física'>AF:</label> 
-                <input name = 'fator atividade física' type ='number' min = '1' max = '1.48' step = '0.01'class = 'AF' value =''>
-            
-            <label for = 'proteina'>Proteína:</label>
-                <input name = 'proteina' type ='number' class = 'proteina' min = '10' max = '35' step = '1' value =''>
-            
-            <label for = 'lipídio'>Lipídio:</label> 
-                <input name = 'lipídio' type ='number' class = 'lipidio' min = '20' max = '35' step = '1' value =''>
-           
-            <button class = 'enviar' onclick = "enviar()">Enviar</button>
-            </div>
-            <div class = 'textarea'></div>
-        
-        
 
-    </div:>
+<body>
+    <div class='header'>
+        <img class='icon' src="https://img.icons8.com/carbon-copy/100/000000/caloric-energy.png" />
+        <p>Calculadora de taxa metabólica basal</p>
+    </div>
+    <div id="conteiner">
+        <div class="menu">
+            <ul>
+                <li>Calculadora de taxa metabólica basal</li>
+                <li>Fator Atividade Física</li>
+            </ul>
+        </div>
+        <div class='principal'>
+            <div id="paragrafo">
+                <p>A Taxa Metabólica Basal (TMB) é o mínimo de energia necessária para manter as funções do organismo em
+                    repouso, como os batimentos cardíacos, a pressão arterial, a respiração e a manutenção da
+                    temperatura corporal.</p>
+            </div>
+            <div id=tabela>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="td_border">Nível de atividade física</th>
+                            <th class="td_border"> Atividade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Sedentário</th>
+                            <td>
+                                < 3 horas/semana</td>
+                        </tr>
+                        <tr>
+                            <th>Leve</th>
+                            <td> > 3 horas/semana</td>
+                        </tr>
+                        <tr>
+                            <th>Moderado</th>
+                            <td>
+                                < 2 horas/dia</td>
+                        </tr>
+                        <tr>
+                            <th >Intenso</th>
+                            <td > > 2 horas/dia</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class='organizar'>
+
+                <label for='idade'>Idade:</label>
+                <input name='idade' type='number' class='idade' min='1' max='90' value=''>
+
+                <label for='peso'>Peso:</label>
+                <input name='peso' type="number" class='peso' min='1' step='1' value=''>
+
+                <label for='altura'>Altura:</label>
+                <input type="number" class='altura' min='1' step='0.1' value=''>
+
+                <label for='fator atividade física'>AF:</label>
+                <select>
+                    <option value='sedentário'>Sedentário</option>
+                    <option value='leve'>Leve</option>
+                    <option value='moderado'>Moderado</option>
+                    <option value='Intenso'>Intenso</option>
+                </select>
+
+                <label for='gênero'>Gênero:</label>
+                <select>
+                    <option value='Homem'>Homem</option>
+                    <option value='Mulher'>Mulher</option>
+                </select>
+
+                <button class='enviar' onclick="enviar()">Calcular</button>
+            </div>
+            <div class='resultado'>
+            </div>
+        </div>
+    </div>
 </body>
-    <script src ='calculadora.js' >
-  </script>
+<script src='calculadora.js'>
+</script>
+
 </html>
