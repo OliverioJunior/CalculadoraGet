@@ -1,0 +1,18 @@
+@media(max-width: 425px) {
+body{
+    height: 100vh;
+    width: 100wh;
+}
+.header p {
+    font-size: 0.6em;
+    align-items: left;
+}
+    .menu {
+    display: none;
+    font-size: 0.6em;
+}
+.principal{
+    grid-template-columns: none;
+    font-size: 0.6em;
+}
+}
