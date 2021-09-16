@@ -68,10 +68,10 @@ function DefinirFormula(){
     return FormulaGet =(1086 - (10.1 * $idade.value)) + valorAf* (13.7 * $peso.value) + (416 * $altura.value);
     
   }
-  if ($genero.value ==='mulher' && IMC < 25){
+  if ($genero.value ==='Mulher' && IMC < 25){
     return FormulaGet =(354 - (6.91 * $idade.value)) + valorAf * (9.36 * $peso.value) + (726 * $altura.value);
     
-  } else if($genero.value ==='mulher' && IMC > 25){
+  } else if($genero.value ==='Mulher' && IMC > 25){
     return (448 - (7.95 * $idade.value)) + valorAf * (11.4 * $peso.value) + (619 * $altura.value);
     
   }
