@@ -1,18 +1,26 @@
 @media(max-width: 425px) {
-body{
+    #conteiner {
     height: 100vh;
-    width: 100wh;
-}
-.header p {
-    font-size: 0.6em;
-    align-items: left;
-}
+    width: calc(100vh * 16 / 9);
+        
+    }
+    .header p {
+        font-size: 0.6em;
+        align-items: left;
+    }
     .menu {
-    display: none;
-    font-size: 0.6em;
-}
-.principal{
-    grid-template-columns: none;
-    font-size: 0.6em;
-}
+        display: none;
+        font-size: 0.6em;
+    }
+    .principal {
+        grid-template-columns: none;
+        font-size: 0.6em;
+    }
+    #paragrafo p{
+        width: 280px;
+    }
+    .resultado {
+        padding: 60px 60px;
+    }
+    
 }
